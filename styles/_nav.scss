@@ -1,0 +1,146 @@
+ #nav-bar {
+     width: 70%;
+     height: 10vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: white;
+     margin: 1em auto;
+     position: absolute;
+     z-index: 999;
+     left: 15%;
+     border-radius: 8px;
+     transition: ease-in-out 1s;
+     border: 1px solid rgba(101, 78, 163, 0.534);
+     nav {
+         display: flex;
+         justify-content: center;
+         width: 100%;
+         margin: 0 3em;
+         align-items: center;
+         text-align: center;
+     }
+     h3 {
+         padding: 0 2em;
+         font-size: 2.5em;
+         color: rgb(101, 78, 163);
+     }
+     ul {
+         display: flex;
+         justify-content: space-around;
+         width: 55%;
+         margin: auto;
+         align-items: center;
+     }
+     ul li a {
+         font-size: 1.5em;
+         color: black;
+         &:hover {
+             text-decoration: underline;
+             text-underline-position: under;
+             color: rgb(101, 78, 163);
+             ;
+         }
+     }
+     #rightNav {
+         width: 30%;
+         justify-content: flex-end;
+     }
+     #bookBtn {
+         padding: 6px 1em;
+         border-radius: 6px;
+         color: black;
+         border: rgb(101, 78, 163) 2px solid;
+         cursor: pointer;
+         font-weight: 700;
+         &:hover {
+             transform: scale(1.2);
+             transition: 1s ease;
+         }
+     }
+     #bookBtn a {
+         color: rgb(101, 78, 163);
+         &:hover {
+             text-decoration: none;
+         }
+     }
+     /* nav overlay */
+     .overlay {
+         width: 0;
+         position: fixed;
+         z-index: 1000;
+         left: 0;
+         top: 0;
+         background-color: rgb(0, 0, 0);
+         background-color: rgba(0, 0, 0, 0.9);
+         overflow-x: hidden;
+         transition: 0.5s;
+         height: 100%;
+     }
+     .overlay-content {
+         position: relative;
+         top: 25%;
+         width: 100%;
+         text-align: center;
+         margin-top: 30px;
+     }
+     .overlay a {
+         padding: 8px;
+         text-decoration: none;
+         font-size: 36px;
+         color: rgb(101, 78, 163);
+         display: block;
+         transition: 0.3s;
+         &:hover,
+         &:focus {
+             color: white;
+             transform: scale(1.2);
+             transition: 1s ease;
+         }
+     }
+     .overlay .closebtn {
+         position: absolute;
+         top: 20px;
+         right: 45px;
+         font-size: 60px;
+     }
+     #hamburger {
+         display: none;
+         align-items: center;
+         justify-content: center;
+         font-size: 4em;
+         margin: auto;
+         color: rgb(101, 78, 163);
+         cursor: pointer;
+         &:hover {
+             transform: rotateZ(110deg);
+             transition: 1s;
+         }
+     }
+     @media screen and (max-height: 450px) {
+         .overlay a {
+             font-size: 20px
+         }
+         .overlay .closebtn {
+             font-size: 40px;
+             top: 15px;
+             right: 35px;
+         }
+     }
+ }
+ 
+ @media screen and (max-width: 932px) {
+     header {
+         flex-wrap: wrap;
+         box-shadow: 6px 6px 6px rgb(133, 133, 133);
+     }
+     nav #bookBtn {
+         display: none;
+     }
+     nav li {
+         display: none;
+     }
+     #nav-bar #hamburger {
+         display: flex;
+     }
+ }

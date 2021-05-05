@@ -1,0 +1,169 @@
+    #blog {
+        height: 190vh;
+        width: 90%;
+        background: white;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        h2 {
+            margin: 8% 0 5% 0;
+            font-size: 3em;
+            border-top: solid 3px rgb(101, 78, 163);
+            width: 80%;
+            color: rgb(101, 78, 163);
+        }
+        .blog {
+            display: flex;
+            width: 80%;
+            margin: auto;
+        }
+        article {
+            width: 45%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+            align-items: center;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+        .blog-image {
+            width: 480px;
+            border-radius: 8px;
+        }
+        .article-info {
+            display: flex;
+            align-items: center;
+            margin: 1em;
+        }
+        .blog-writer {
+            display: flex;
+        }
+        i,
+        h6 {
+            font-size: 1.2em;
+            margin: 6px;
+        }
+        i {
+            color: rgb(101, 78, 163);
+        }
+        p {
+            font-size: 1.2em;
+        }
+        h4 {
+            font-size: 1.5em;
+            margin: .5em 0 1em 0;
+            letter-spacing: 1px;
+        }
+        .reviews {
+            margin: 5% 0;
+            height: 45%;
+            width: 80%;
+            background: rgba(101, 78, 163, 0.185);
+            border-radius: 8px;
+            display: block;
+        }
+        .reviews h2 {
+            font-size: 2.5em;
+            margin: 10% auto 2em auto;
+        }
+        .reviews article {
+            flex-direction: row;
+            width: 90%;
+            height: 70%;
+            position: relative;
+        }
+        .btnContainer {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .btnContainer button {
+            background: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin: 0 10px;
+            &:hover {
+                background: lightgray;
+                transform: scale(1.1);
+                transition: 1s ease-in-out;
+            }
+        }
+        .btnContainer button i {
+            font-size: 2em;
+            margin: 8px 8px;
+        }
+        .review-info {
+            display: flex;
+            flex-direction: column;
+            margin: 3em;
+        }
+        .review-info p {
+            font-size: 1em;
+            margin: 1em auto;
+        }
+        .review-info h4 {
+            font-size: 1.2em;
+        }
+        .reviewer-container {
+            display: flex;
+            margin: 1em;
+        }
+        .reviewer-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .reviewer-wrapper h5 {
+            opacity: .7;
+        }
+        .review-image {
+            width: 420px;
+            border-radius: 8px;
+        }
+        .reviewer-image {
+            width: 80px;
+            border-radius: 70vw;
+            margin: 1em;
+        }
+    }
+    
+    @media screen and (max-width: 1332px) {
+        #blog {
+            height: 100%;
+        }
+        #blog .blog-image {
+            width: 90%;
+        }
+        #blog #review-article {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        #blog .review-image {
+            width: 100%;
+        }
+        #blog .btnContainer {
+            top: -10%;
+        }
+    }
+    
+    @media screen and (max-width: 932px) {
+        #blog .article-info {
+            flex-direction: column;
+        }
+        #blog .blog {
+            flex-direction: column;
+        }
+        #blog article {
+            width: 90%;
+            margin: 1em auto;
+        }
+    }
