@@ -83,6 +83,9 @@
             background: lightgray;
         }
     }
+    input {
+        display: flex;
+    }
     select {
         background-color: white;
         border-radius: 4px;
@@ -111,10 +114,25 @@
         background-repeat: no-repeat;
         border-color: rgb(101, 78, 163);
         outline: 0;
+        font-weight: 700;
     }
     select:-moz-focusring {
         color: transparent;
         text-shadow: 0 0 0 #000;
+        font-weight: 700;
+    }
+     ::-webkit-calendar-picker-indicator {
+        display: none;
+    }
+     ::-webkit-calendar-picker-indicator::after {
+        content: '';
+        display: none;
+        background: url(/*yourURLHere*/) no-repeat;
+        background-size: 10%;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        transform: translateX(-2%);
     }
     .dataBtn {
         font-size: 1em;

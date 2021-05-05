@@ -320,6 +320,12 @@
   background: lightgray;
 }
 
+#home input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 #home select {
   background-color: white;
   border-radius: 4px;
@@ -349,11 +355,29 @@
   background-repeat: no-repeat;
   border-color: #654ea3;
   outline: 0;
+  font-weight: 700;
 }
 
 #home select:-moz-focusring {
   color: transparent;
   text-shadow: 0 0 0 #000;
+  font-weight: 700;
+}
+
+#home ::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+#home ::-webkit-calendar-picker-indicator::after {
+  content: '';
+  display: none;
+  background: url(/*yourURLHere*/) no-repeat;
+  background-size: 10%;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  -webkit-transform: translateX(-2%);
+          transform: translateX(-2%);
 }
 
 #home .dataBtn {
