@@ -226,9 +226,6 @@
 }
 
 @media screen and (max-width: 1332px) {
-    #home {
-        height: 150vh;
-    }
     #home .left-color,
     #home .home-contents {
         height: 35%;
@@ -256,7 +253,7 @@
 
 @media screen and (max-width: 1132px) {
     #home {
-        height: 120vh;
+        height: 160vh;
     }
     #home .left-color,
     #home .home-contents {
@@ -270,7 +267,7 @@
         padding: 8px 1em;
     }
     #home .advertiser {
-        bottom: 2%;
+        bottom: 10%;
     }
     #home .ad-image {
         width: 100%;
@@ -281,11 +278,14 @@
     #home .left-text h3 {
         font-size: 2em;
     }
+    #home .advertiser {
+        bottom: 2%;
+    }
 }
 
 @media screen and (max-width: 780px) {
     #home {
-        height: 200vh;
+        height: 170vh;
     }
     #home .home-image {
         height: 50%;
@@ -325,7 +325,8 @@
     }
     #home .date-container {
         width: 90%;
-        bottom: 52%;
+        height: 27%;
+        bottom: 49%;
     }
     #home .left-text {
         width: 90%;
