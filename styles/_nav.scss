@@ -1,5 +1,5 @@
  #nav-bar {
-     width: 70%;
+     width: 80%;
      height: 10vh;
      display: flex;
      justify-content: center;
@@ -8,7 +8,7 @@
      margin: 1em auto;
      position: absolute;
      z-index: 999;
-     left: 15%;
+     left: 10%;
      border-radius: 8px;
      transition: ease-in-out 1s;
      border: 1px solid rgba(101, 78, 163, 0.534);
@@ -142,5 +142,12 @@
      }
      #nav-bar #hamburger {
          display: flex;
+     }
+ }
+ 
+ @media screen and (max-width: 732px) {
+     #nav-bar {
+         width: 100%;
+         left: 0;
      }
  }

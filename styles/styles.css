@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap");
 #nav-bar {
-  width: 70%;
+  width: 80%;
   height: 10vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15,7 +15,7 @@
   margin: 1em auto;
   position: absolute;
   z-index: 999;
-  left: 15%;
+  left: 10%;
   border-radius: 8px;
   -webkit-transition: ease-in-out 1s;
   transition: ease-in-out 1s;
@@ -195,6 +195,13 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media screen and (max-width: 732px) {
+  #nav-bar {
+    width: 100%;
+    left: 0;
   }
 }
 
@@ -513,18 +520,27 @@
   color: #654ea3;
 }
 
-@media screen and (max-width: 1332px) {
+@media screen and (max-width: 1532px) {
+  #home {
+    width: 100%;
+  }
+  .dataBtn {
+    height: 50%;
+    padding: 8px .8em;
+  }
+}
+
+@media screen and (max-width: 1360px) {
   #home .left-color,
   #home .home-contents {
     height: 35%;
   }
   #home .date-container {
-    width: 90%;
+    width: 92%;
     bottom: 60%;
   }
   #home .dataBtn {
     height: 50%;
-    padding: 8px 1em;
   }
   #home .advertiser {
     bottom: 5%;
@@ -569,6 +585,9 @@
   #home .advertiser {
     bottom: 2%;
   }
+  #home .date-container {
+    border: 1px solid rgba(101, 78, 163, 0.534);
+  }
 }
 
 @media screen and (max-width: 780px) {
@@ -602,10 +621,11 @@
         -ms-flex-direction: column;
             flex-direction: column;
     height: 22%;
-    border: 1px solid rgba(101, 78, 163, 0.534);
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   #home .date-container {
-    width: 100%;
+    width: 92%;
     bottom: 45%;
   }
   #home .dataBtn {
