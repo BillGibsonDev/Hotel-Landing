@@ -32,6 +32,17 @@ a {
     text-decoration: none;
 }
 
+button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1532px) {
+    html {
+        font-size: 90%;
+    }
+}
+
 @media screen and (max-width: 1332px) {
     html {
         font-size: 80%;

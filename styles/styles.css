@@ -396,7 +396,6 @@
   background: #654ea3;
   font-weight: 700;
   color: white;
-  letter-spacing: 1px;
   cursor: pointer;
 }
 
@@ -476,6 +475,7 @@
   border-radius: 6px;
   color: white;
   cursor: pointer;
+  font-weight: 700;
 }
 
 #home .adBtn:hover {
@@ -1103,6 +1103,7 @@ footer input,
 footer button {
   font-size: 1em;
   padding: 6px 1em;
+  border-radius: 9px;
 }
 
 footer button {
@@ -1209,6 +1210,17 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1532px) {
+  html {
+    font-size: 90%;
+  }
 }
 
 @media screen and (max-width: 1332px) {
